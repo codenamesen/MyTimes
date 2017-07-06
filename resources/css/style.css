@@ -2,8 +2,14 @@
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
+  display: flex;
 }
 
 .logo{
   color: MediumAquamarine;
+  display: flex;
+}
+
+.menu{
+  display: flex;
 }
