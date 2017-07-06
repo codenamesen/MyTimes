@@ -1,15 +1,25 @@
-.header{
+.headercontainer{
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
   display: flex;
+  justify-content: space-between;
+  align-items:center;
+  }
+
+img{
+    margin-right: 10px;
 }
 
 .logo{
   color: MediumAquamarine;
-  display: flex;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.menu{
-  display: flex;
+.menu li{
+  display: inline-block;
+  width: 60px;  
+  margin: 0 auto;
 }
