@@ -1,37 +1,39 @@
-.headercontainer{
+div{
+  border: 1px solid black;
+}
+
+header{
+  display: inline-flex;
   background-color: white;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
-  display: flex;
-  justify-content: space-between;
-  align-items:center;
-  padding: 10px 40px 10px 20px;
   border-bottom: 1px solid black;
-  z-index: 1;
   }
 
-.logo{
-  color: MediumAquamarine;
+.logo {
   display: inline-flex;
-  justify-content: center;
+  width: 1050px;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+.logo img{
+  padding: 0px 10px 0px 30px;
+}
+
+.logo .text {
+  color: MediumAquamarine;
+}
+
+nav {
+  display: inline-flex;
+  width: 270px;
+  justify-content: space-around;
   align-items: center;
 }
 
-.logo span{
-  padding: 1px 10px;
-}
-
-nav li{
-  display: inline-block;
-  width: 60px;
-  text-align: center;
-}
-
-nav li span{
-  padding: 1px 8px;
-}
-
-nav a {
+nav a{
   color: black;
 }
