@@ -10,6 +10,11 @@ header{
   font-size: 14px;
   font-weight: bold;
   border-bottom: 1px solid black;
+  position: fixed;
+  top: 0px;                        /*This I learned by inspecting the webpage*/
+  padding-top: 10px;
+  width: 100%;
+  z-index: 2;
   }
 
 header .logo {
@@ -43,10 +48,17 @@ header nav a{
 /*Below this line all the styles are for contents other than the header*/
 
 /*This column contains all the three colums*/
+body{
+  margin: 0px;                        /*This I learned by inspecting the element*/
+}
+
 .column{
   display: flex;
-  margin: 0px 20px 80px 20px;
-  padding: 20px 0px 0px 0px;
+  width: 1300px;
+  margin: 10px auto 100px auto;      /*This I learned by inspecting the element*/
+  position: relative;
+  top: 73px;
+  padding: 40px 0px 0px 0px;
 }
 
 /*This is the leftmost or the first column or the column large*/
