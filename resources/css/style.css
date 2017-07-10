@@ -92,12 +92,11 @@ body{
 }
 /*Style for column ends above*/
 
-/*This is for styling all the images*/
+/*This is for styling all the images and the text on top of the images*/
 .imgtext{
   display: flex;
-  justify-content: center;
-  align-content: center;
-  /*align-items: flex-start;*/
+  text-align: center;
+
 }
 #mainstoryimg{
   background-image: url('../images/img-story-main.png');
@@ -132,6 +131,7 @@ body{
 
 .mainstory{
   font-size: 40px;
+  text-align: left;
 }
 
 /*Style for all images ends above*/
