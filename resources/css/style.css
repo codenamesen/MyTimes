@@ -1,10 +1,11 @@
-div{
+/*div{
   border: 1px solid black;
-}
+}*/
 
 header{
   display: flex;
   align-items: center;
+  height: 70px;
   background-color: white;
   font-family: Verdana;
   font-size: 14px;
@@ -36,7 +37,7 @@ header nav{
   padding-right: 40px;
 }
 
-nav span{
+header nav span{
   display: inline-block;
   padding: 20px 10px;
 }
@@ -55,7 +56,7 @@ body{
 .column{
   display: flex;
   width: 1300px;
-  margin: 10px auto 100px auto;      /*This I learned by inspecting the element*/
+  margin: 7px auto 300px auto;      /*This I learned by inspecting the element*/
   position: relative;
   top: 73px;
   padding: 40px 0px 0px 0px;
@@ -66,11 +67,18 @@ body{
   width: 630px;
   flex-shrink: 0;
   margin: 0px 40px 0px 0px;
-  /*display: inline-flex;*/
 }
 
-.thirdpara{
-  padding: 0 30px 0px 0px;
+.secondary{                          /*This div holds the smaller divs under the main image*/
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  height: 498px;
+}
+
+.width{                      /*This specifies the width of the boxes in the first column below the main image*/
+  width: 299px;
 }
 
 /*This is the middle column or the column medium*/
@@ -87,60 +95,100 @@ body{
   margin: 0px 40px 0px 0px;
 }
 
-.small .firstpara img{
+.small img{            /*This styles the foreground image*/
   width: 230px
 }
+
+/*This styles the text for each story*/
+.details{                                  /*Style for the text story*/
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+/*This Styles the News Bytes*/
+.list{
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.bites{
+font-size: 16px;
+font-weight: bold;
+text-align: center;
+padding-bottom: 20px;
+}
+
+.list span{
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  border-bottom: 1px solid black;
+  padding: 10px 20px;
+}
+
 /*Style for column ends above*/
+
 
 /*This is for styling all the images and the text on top of the images*/
 .imgtext{
-  display: flex;
-  text-align: center;
-
+    font-family: Georgia;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    text-align: center;
 }
+
+.mainstory{
+    font-size: 40px;
+    text-align: left;
+}
+
 #mainstoryimg{
   background-image: url('../images/img-story-main.png');
   height: 300px;
-  width: auto;
-}
+  background-repeat: no-repeat;
+  }
 
 #storytwoimg{
   background-image: url('../images/img-story-2.png');
   height: 300px;
-  width: auto;
+  background-repeat: no-repeat;
 }
 
 #storythreeimg{
   background-image: url('../images/img-story-3.png');
   height: 300px;
-  width: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #storyoneimg{
   background-image: url('../images/img-story-1.png');
   height: 300px;
-  width: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
-.imgtext{
-  font-family: Georgia;
-  font-weight: bold;
-  font-size: 30px;
-  color: white;
-}
-
-.mainstory{
-  font-size: 40px;
-  text-align: left;
-}
-
 /*Style for all images ends above*/
 
+/*Style for footer below this line*/
+footer{
+  border: 1px solid black;
+}
 
+footer div{
+  border: 1px solid black;
+}
 
+footer{
+  display: flex;
+  height: 300px;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
 
-.details{                                  /*Style for the text story*/
-  font-family: Georgia;
-  font-size: 17px;
-  color: black;
+footer .navigation{
+  display: flex;
 }
