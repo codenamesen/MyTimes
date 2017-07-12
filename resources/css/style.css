@@ -13,7 +13,6 @@ header{
   border-bottom: 1px solid black;
   position: fixed;
   top: 0px;                        /*This I learned by inspecting the webpage*/
-  padding-top: 10px;
   width: 100%;
   z-index: 2;
   }
@@ -22,7 +21,6 @@ header .logo {
   display: inline-flex;
   width: 1010px;
   align-items: center;
-  margin: 0px 0px 0px 0px;
 }
 
 header .logo img{
@@ -56,7 +54,7 @@ body{
 .column{
   display: flex;
   width: 1300px;
-  margin: 7px auto 150px auto;      /*This I learned by inspecting the element*/
+  margin: 3px auto 150px auto;      /*This I learned by inspecting the element*/
   position: relative;
   top: 73px;
   padding: 40px 0px 0px 0px;
@@ -117,13 +115,12 @@ padding-bottom: 20px;
 .secondary{                          /*This div holds the smaller divs under the main image*/
   display: flex;
   flex-flow: column wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-content: space-between;
-  margin: 30px 0px 0px 0px;
   height: 570px;
   }
 
-  /*This styles the text for each story beneath the main story*/
+  /*This styles the heading and text for each story*/
 
   h2{                                        /*Style copied from the original page*/
     margin-top: 0;
@@ -134,10 +131,11 @@ padding-bottom: 20px;
     font-style: normal;
   }
 
-  .details{                                  /*Style for the text story*/
+  p.details{                                  /*Style for the text story*/
     font-family: Georgia;
     font-size: 17px;
     color: black;
+    margin: 20px auto 40px auto;
   }
 
 /*This class specifies the width of the boxes holding the images and the connected story excluding main image*/
