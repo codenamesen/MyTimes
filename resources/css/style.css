@@ -53,7 +53,7 @@ body{
 /*This column contains all the three colums*/
 .column{
   display: flex;
-  width: 1300px;
+  width: 1255px;
   margin: 3px auto 150px auto;      /*This I learned by inspecting the element*/
   position: relative;
   top: 73px;
@@ -112,7 +112,7 @@ padding-bottom: 20px;
 
 /*Following declerations is for styling all the images and the text on top of the images*/
 
-.secondary{                          /*This div holds the smaller divs under the main image*/
+.secondary{                          /*This div holds the smaller divs under the main image in the first column*/
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
